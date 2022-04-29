@@ -1,0 +1,27 @@
+//  _header.scss
+
+// Home Page Header styles
+.mainHeader {
+   background: url(../assets/home-image-1.jpg) no-repeat center;
+   height: 60vh;
+   // position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+   z-index: -10;;
+   .barOneText {
+      z-index: 5;
+      h1, p {
+         margin: 0;
+         margin-bottom: 35px;
+      }
+   }
+   .headerimg {
+      position: absolute;
+      right: -10px;
+      bottom: 150px;
+      z-index: 1;
+      width: 50%;
+   }
+}

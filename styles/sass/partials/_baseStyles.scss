@@ -6,6 +6,10 @@
    margin: 0 auto;
 }
 
+body {
+   background-color: $primary;
+}
+
 button {
    font-family: $titleFont;
    font-size: 1.9rem;
@@ -29,4 +33,24 @@ img {
    max-width: 100%;
    height: auto;
    object-fit: cover;
+}
+
+.skip-link {
+   position: absolute;
+   left: -1000px;
+   top: 5px;
+   z-index: 999;
+   background: white;
+   color: black;
+}
+
+.skip-link:focus {
+   left: 0;
+}
+
+footer p {
+   text-align: center;
+   background-color: $primary;
+   padding: 10px 0;
+   margin: 0;
 }

@@ -1,0 +1,14 @@
+// _nav.scss
+
+nav {
+   ul {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+   }
+   .barOneNavLogo {
+      font-family: $titleFont;
+      font-size: 2.75rem;
+      font-weight: 300;
+   }
+}

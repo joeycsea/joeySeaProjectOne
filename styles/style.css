@@ -317,6 +317,10 @@ ul {
   margin: 0 auto;
 }
 
+body {
+  background-color: #111010;
+}
+
 button {
   font-family: "Tulpen One";
   font-size: 1.9rem;
@@ -340,4 +344,72 @@ img {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+footer p {
+  text-align: center;
+  background-color: #111010;
+  padding: 10px 0;
+  margin: 0;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
+nav .barOneNavLogo {
+  font-family: "Tulpen One";
+  font-size: 2.75rem;
+  font-weight: 300;
+}
+
+.mainHeader {
+  background: url(../assets/home-image-1.jpg) no-repeat center;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: -10;
+}
+.mainHeader .barOneText {
+  z-index: 5;
+}
+.mainHeader .barOneText h1, .mainHeader .barOneText p {
+  margin: 0;
+  margin-bottom: 35px;
+}
+.mainHeader .headerimg {
+  position: absolute;
+  right: -10px;
+  bottom: 150px;
+  z-index: 1;
+  width: 50%;
 }
