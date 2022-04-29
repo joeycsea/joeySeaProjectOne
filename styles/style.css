@@ -234,3 +234,110 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Chathura";
+  font-size: 1.95rem;
+  letter-spacing: 1.9px;
+  line-height: 58px;
+  color: white;
+}
+
+h1 {
+  font-family: "Tulpen One";
+  font-size: 13rem;
+  letter-spacing: 2.4px;
+  color: #ff8327;
+}
+
+header p {
+  font-size: 4.16rem;
+  font-weight: 700;
+  line-height: 94.7px;
+  letter-spacing: 2.6px;
+}
+
+h2 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  line-height: 58px;
+}
+
+h3 {
+  font-size: 4.16rem;
+  color: white;
+}
+
+p {
+  font-size: 1.95rem;
+  letter-spacing: 1.9px;
+  line-height: 30px;
+}
+
+nav {
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 1.9px;
+  text-transform: uppercase;
+}
+nav a {
+  display: inline-block;
+  padding: 20px 40px;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
+}
+nav a:hover, nav a:focus {
+  color: #ff8327;
+}
+
+ul,
+li,
+a,
+input {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+button {
+  font-family: "Tulpen One";
+  font-size: 1.9rem;
+  letter-spacing: 2px;
+  padding: 5px 35px;
+  color: white;
+  background-color: #bf2603;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+button:hover, button:focus {
+  background-color: #220303;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
