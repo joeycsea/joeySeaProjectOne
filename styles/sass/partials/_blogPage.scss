@@ -1,0 +1,42 @@
+//  _blogPage.scss
+
+// Blog Main Page styles
+.blogContainer {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 100px;
+   .mission {
+      max-width: 35%;
+      background-color: $darkRed;
+      padding: 40px;
+      h2 {
+         margin-bottom: 0;
+      }
+      p {
+         margin-bottom: 0;
+      }
+      a {
+         color: $orange;
+         text-decoration: none;
+         margin-top: 0;
+      }
+      ul {
+         list-style-position: inside;
+         line-height: 30px;
+         font-size: 1.9rem; 
+   // https: //stackoverflow.com/questions/5306640/how-to-set-bullet-colors-in-ul-li-html-lists-via-css-without-using-any-images-or 
+         li::before {
+            content: "";
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color: $red;
+            border-radius: 50%;
+            margin: .25em .5em 0;
+            float: left;
+         }
+      }
+   }
+   .blogContent {
+      max-width: 65%;
+   }
+}

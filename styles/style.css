@@ -317,6 +317,12 @@ ul {
   margin: 0 auto;
 }
 
+.blogWrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 body {
   background-color: #111010;
 }
@@ -358,7 +364,7 @@ img {
 
 footer p {
   text-align: center;
-  background-color: #111010;
+  background-color: rgb(53, 52, 52);
   padding: 10px 0;
   margin: 0;
 }
@@ -411,6 +417,16 @@ nav .barOneNavLogo {
   top: 200px;
   z-index: 1;
   width: 45%;
+}
+
+.blogNavBar {
+  background-image: url(../assets/blog-header-1.jpg);
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+}
+.blogNavBar h3 {
+  margin-top: 25vh;
 }
 
 .about {
@@ -524,4 +540,47 @@ nav .barOneNavLogo {
 .gallery li {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
+}
+
+.blogContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+}
+.blogContainer .mission {
+  max-width: 35%;
+  background-color: #220303;
+  padding: 40px;
+}
+.blogContainer .mission h2 {
+  margin-bottom: 0;
+}
+.blogContainer .mission p {
+  margin-bottom: 0;
+}
+.blogContainer .mission a {
+  color: #ff8327;
+  text-decoration: none;
+  margin-top: 0;
+}
+.blogContainer .mission ul {
+  list-style-position: inside;
+  line-height: 30px;
+  font-size: 1.9rem;
+}
+.blogContainer .mission ul li::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #bf2603;
+  border-radius: 50%;
+  margin: 0.25em 0.5em 0;
+  float: left;
+}
+.blogContainer .blogContent {
+  max-width: 65%;
 }
