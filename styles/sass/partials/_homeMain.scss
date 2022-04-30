@@ -59,8 +59,7 @@
 
 .newLocations {
    .gridContent {
-      width: 100px;
-      margin-right: 100px;
+      padding-right: 65px;
       text-align: right;
       p {
          text-align: left;
@@ -73,7 +72,8 @@
 
 .hostAParty {
    text-align: center;
-   margin: 100px;
+   margin-top: 100px;
+   margin-bottom: 100px;
    h2 {
       color: $orange;
    }
@@ -82,4 +82,35 @@
 // Banner style
 .banner img {
    width: 100%;
+}
+
+// Event Content styles
+
+.events {
+   display: flex;
+   margin-top: 100px;
+   margin-bottom: 100px;
+   img {
+      max-width: 300px;
+      max-height: 300px;
+      box-shadow: -10px 10px $orange;
+   }
+   .eventContent {
+      width: 75%;
+      margin-left: 80px;
+   }
+}
+
+// Gallery styles
+.gallery {
+   padding-top: 100px;
+   padding-bottom: 100px;
+   background-color: $darkRed;
+   ul {
+      display: flex;
+      justify-content: space-between;
+   }
+   li {
+      flex-basis: 32%;
+   }
 }
