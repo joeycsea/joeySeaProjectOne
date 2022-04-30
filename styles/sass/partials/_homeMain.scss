@@ -1,0 +1,85 @@
+// _homeMain.scss
+
+//About Section styles
+.about {
+   padding-top: 150px;
+   padding-bottom: 120px;
+   ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      li {
+         width: calc((95%/2) - 50px);
+         margin-left: 50px;
+         position: relative;
+         i {
+            position: absolute;
+            top: 65px;
+            left: -60px;
+         }
+      }
+   }
+}
+
+
+// Grid section styles
+
+.grid {
+   background-color: $darkRed;
+   padding-bottom: 50px;
+   .planAhead, .newLocations {
+      display: flex;
+      .gridContent {
+         width: 50%;
+      }
+      .leftImg {
+         img {
+            position: relative;
+            left: -95px;
+            top: -50px;
+            box-shadow: 10px 10px $orange;
+         }
+      }
+      .rightImg {
+         img {
+            position: relative;
+            right: -95px;
+            bottom: -140px;
+            box-shadow: -10px 10px $orange;
+         }
+      }
+   }
+}
+
+.planAhead {
+   .gridContent {
+      margin-left: 50px;
+   }
+}
+
+.newLocations {
+   .gridContent {
+      width: 100px;
+      margin-right: 100px;
+      text-align: right;
+      p {
+         text-align: left;
+      }
+   }
+}
+
+
+// Host a Party styles
+
+.hostAParty {
+   text-align: center;
+   margin: 100px;
+   h2 {
+      color: $orange;
+   }
+}
+
+// Banner style
+.banner img {
+   width: 100%;
+}

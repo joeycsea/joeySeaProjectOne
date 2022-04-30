@@ -2,14 +2,16 @@
 
 // Home Page Header styles
 .mainHeader {
-   background: url(../assets/home-image-1.jpg) no-repeat center;
+   background: url(../assets/home-image-1.jpg) no-repeat;
+   background-size: cover;
    height: 60vh;
+   width: 100%;
    // position: relative;
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
    align-items: center;
-   z-index: -10;;
+   z-index: -10;
    .barOneText {
       z-index: 5;
       h1, p {
@@ -19,9 +21,10 @@
    }
    .headerimg {
       position: absolute;
-      right: -10px;
-      bottom: 150px;
+      right: 0;
+      top: 225px;
       z-index: 1;
       width: 50%;
+      height: 200px;
    }
 }
