@@ -447,20 +447,28 @@ nav .barOneNavLogo {
 }
 .about ul li {
   width: calc(47.5% - 50px);
-  margin-left: 50px;
-  position: relative;
+  margin-right: 50px;
 }
-.about ul li span {
-  font-size: inherit;
-  color: #bf2603;
+.about ul li .aboutCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.about ul li i {
-  vertical-align: middle;
-  position: absolute;
-  top: 65px;
-  left: -60px;
+.about ul li .aboutCard span {
+  width: 25%;
+}
+.about ul li .aboutCard span i {
   color: white;
   z-index: 5;
+}
+.about ul li .aboutCard span .fa-circle {
+  color: #bf2603;
+}
+.about ul li .aboutCard .aboutCardRight {
+  width: 75%;
+}
+.about ul li .aboutCard .aboutCardRight h2 {
+  margin: 0;
 }
 
 .grid {
@@ -592,7 +600,6 @@ nav .barOneNavLogo {
   color: #ff8327;
   text-decoration: none;
   margin-top: 0;
-  margin-bottom: 0;
   padding: 30px;
 }
 .blogContainer .mission ul {
