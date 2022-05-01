@@ -431,6 +431,16 @@ nav .barOneNavLogo {
   margin-top: 25vh;
 }
 
+.contactNavBar {
+  background-image: url(../assets/contact-header-1.jpg);
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+}
+.contactNavBar h3 {
+  margin-top: 25vh;
+}
+
 .about {
   padding-top: 150px;
   padding-bottom: 120px;
@@ -676,6 +686,7 @@ nav .barOneNavLogo {
   color: white;
   background-color: #111010;
   font-family: "Chathura";
+  height: 20px;
 }
 .commentFormContainer input {
   border: none;
@@ -686,12 +697,96 @@ nav .barOneNavLogo {
 .commentFormContainer textarea {
   border: 1px solid #ff8327;
   resize: none;
-  width: 630px;
+  width: 100%;
   height: 300px;
   margin-bottom: 50px;
   padding: 20px;
 }
 .commentFormContainer button {
-  width: 98%;
+  width: 100%;
   margin-bottom: 100px;
+}
+
+.contactSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 50px 0;
+}
+.contactSection .socialMedia ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactSection .socialMedia ul li {
+  margin: 10px;
+}
+.contactSection .contactContent .emailInfo {
+  margin-bottom: 30px;
+}
+.contactSection .contactContent p {
+  margin: 5px;
+}
+
+.messageFormContainer {
+  background-color: #220303;
+  position: relative;
+}
+.messageFormContainer .contactCard {
+  -webkit-box-shadow: 10px 10px #ff8327;
+          box-shadow: 10px 10px #ff8327;
+  position: absolute;
+  background-color: #220303;
+  width: 70%;
+  right: -40px;
+  top: -530px;
+  padding: 60px;
+}
+.messageFormContainer .contactCard .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.messageFormContainer .contactCard input,
+.messageFormContainer .contactCard textarea {
+  color: white;
+  background-color: #220303;
+  font-family: "Chathura";
+  height: 20px;
+  width: 100%;
+}
+.messageFormContainer .contactCard input {
+  border: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+  width: 95%;
+}
+.messageFormContainer .contactCard textarea {
+  border: 1px solid white;
+  resize: none;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.messageFormContainer .contactCard button {
+  width: 100%;
+}
+
+input[type=text] {
+  height: 20px;
+}
+
+.contactFooter {
+  margin-top: 300px;
 }

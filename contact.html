@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Blog - Bar-One</title>
+
+   <!-- Google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@300;400;700&family=Tulpen+One&display=swap"
+      rel="stylesheet">
+   <!-- Font awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <!-- Linking Styles -->
+   <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+   <!-- Skip link -->
+   <a href="#contactMain" class="skip-link">Skip to Content</a>
+
+   <nav class="contactNavBar">
+      <ul>
+         <li><a href="./index.html">Home</a></li>
+         <li><a href="#about">About</a></li>
+         <li class="barOneNavLogo"><a href="./index.html">Bar-One</a></li>
+         <li><a href="./blog.html">Blog</a></li>
+         <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <h3 class="blogWrapper">Get in Touch</h3>
+   </nav>
+
+
+   <main>
+      <section class="contactSection">
+         <div class="wrapper">
+            <div class="socialMedia">
+               <ul>
+                  <li><i class="fa-brands fa-facebook-f"></i></li>
+                  <li><i class="fa-brands fa-instagram"></i></li>
+                  <li><i class="fa-brands fa-twitter"></i></li>
+                  <li><i class="fa-brands fa-whatsapp"></i></li>
+               </ul>
+            </div>
+   
+            <div class="contactContent">
+               <p class="emailInfo">info@email.com</p>
+
+               <p>123-456-7890</p>
+               <p>123 Queen Street West, Unit 10</p>
+               <p>Toronto, Ontario</p>
+               <p>M5V2D5</p>
+            </div>
+         </div>
+      </section>
+
+      <div class="messageFormContainer wrapper" id="contactMain">
+         
+         <div class="contactCard">
+            <form action="#" method="post" name="messageForm" class="messageForm">
+   
+               <div class="nameEmail">
+                  <span><label for="name">Name</label>
+                     <input type="text" id="name"></span>
+   
+                  <span><label for="email">Email address</label>
+                     <input type="email" id="email"></span>
+               </div>
+   
+               <label for="message"></label>
+               <textarea name="message" id="message" cols="30" rows="10" placeholder="Comment"
+                  placeholder="Message"></textarea>
+   
+               <button>Submit</button>
+            </form>
+         </div>
+      </div>
+   </main>
+
+   <footer class="contactFooter">
+      <p>Copyright 2019 Juno College</p>
+   </footer>
+</body>
+
+</html>
