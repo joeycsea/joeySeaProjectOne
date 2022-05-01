@@ -4,26 +4,48 @@
 .blogContainer {
    display: flex;
    justify-content: space-between;
-   margin-top: 100px;
+   // margin-top: 100px;
+
    .mission {
-      max-width: 35%;
-      background-color: $darkRed;
-      padding: 40px;
+      width: 35%;
+      min-width: 300px;
+      position: relative;
+      margin-right: 95px;
       h2 {
          margin-bottom: 0;
+         margin-top: 0;
+         padding: 30px;
+         padding-bottom: 0;
       }
       p {
          margin-bottom: 0;
+         margin-top: 0;
+         padding: 30px;
+      }
+      .missionImg {
+         width: auto;
+         position: absolute;
+         left: -65px;
+         top: 30px;
+      }
+      .missionContainer {
+         background-color: $darkRed;
+         padding: 0 10px 20px 10px;
+         padding-top: 335px;
+         margin-top: 50px;
       }
       a {
          color: $orange;
          text-decoration: none;
          margin-top: 0;
+         margin-bottom: 0;
+         padding: 30px;
       }
       ul {
          list-style-position: inside;
          line-height: 30px;
          font-size: 1.9rem; 
+         padding: 10px;
    // https: //stackoverflow.com/questions/5306640/how-to-set-bullet-colors-in-ul-li-html-lists-via-css-without-using-any-images-or 
          li::before {
             content: "";
@@ -37,6 +59,51 @@
       }
    }
    .blogContent {
-      max-width: 65%;
+      width: 65%;
+      position: relative;
+      .blogImg {
+         position: absolute;
+         top: -125px;
+         left: 15px;
+         max-width: 95%;
+         height: auto;
+         object-fit: cover;
+         box-shadow: -15px 15px $orange;
+         
+      }
+      .blogWords {
+         border-left: 5px solid $orange;
+         border-bottom: 5px solid $orange;
+         // margin-top: 400px;
+         margin-top: 253px;
+         .menuContainer {
+            padding: 80px 0px 0px 50px;
+         }
+      }
+   }
+}
+
+// Comments styles
+.commentContainer {
+   margin-right: 95px;
+   .commentCard {
+      display: flex;
+
+   }
+   .peopleImg {
+      width: 25%;
+   }
+   .commentContent {
+      width: 75%;
+      h4 {
+         font-size: 2rem;
+         color: $orange;
+         margin-top: -20px;
+         margin-bottom: -35px;
+      }
+      p {
+         font-size: 1.8rem;
+         margin-bottom: 88px;
+      }
    }
 }

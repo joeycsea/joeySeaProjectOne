@@ -12,10 +12,15 @@
          width: calc((95%/2) - 50px);
          margin-left: 50px;
          position: relative;
+         span { font-size: inherit;
+         color: $red; }
          i {
+            vertical-align: middle;
             position: absolute;
             top: 65px;
             left: -60px;
+            color: white;
+            z-index: 5;
          }
       }
    }

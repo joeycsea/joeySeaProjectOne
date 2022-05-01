@@ -417,6 +417,8 @@ nav .barOneNavLogo {
   top: 200px;
   z-index: 1;
   width: 45%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .blogNavBar {
@@ -448,10 +450,17 @@ nav .barOneNavLogo {
   margin-left: 50px;
   position: relative;
 }
+.about ul li span {
+  font-size: inherit;
+  color: #bf2603;
+}
 .about ul li i {
+  vertical-align: middle;
   position: absolute;
   top: 65px;
   left: -60px;
+  color: white;
+  z-index: 5;
 }
 
 .grid {
@@ -549,28 +558,48 @@ nav .barOneNavLogo {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 100px;
 }
 .blogContainer .mission {
-  max-width: 35%;
-  background-color: #220303;
-  padding: 40px;
+  width: 35%;
+  min-width: 300px;
+  position: relative;
+  margin-right: 95px;
 }
 .blogContainer .mission h2 {
   margin-bottom: 0;
+  margin-top: 0;
+  padding: 30px;
+  padding-bottom: 0;
 }
 .blogContainer .mission p {
   margin-bottom: 0;
+  margin-top: 0;
+  padding: 30px;
+}
+.blogContainer .mission .missionImg {
+  width: auto;
+  position: absolute;
+  left: -65px;
+  top: 30px;
+}
+.blogContainer .mission .missionContainer {
+  background-color: #220303;
+  padding: 0 10px 20px 10px;
+  padding-top: 335px;
+  margin-top: 50px;
 }
 .blogContainer .mission a {
   color: #ff8327;
   text-decoration: none;
   margin-top: 0;
+  margin-bottom: 0;
+  padding: 30px;
 }
 .blogContainer .mission ul {
   list-style-position: inside;
   line-height: 30px;
   font-size: 1.9rem;
+  padding: 10px;
 }
 .blogContainer .mission ul li::before {
   content: "";
@@ -582,5 +611,50 @@ nav .barOneNavLogo {
   float: left;
 }
 .blogContainer .blogContent {
-  max-width: 65%;
+  width: 65%;
+  position: relative;
+}
+.blogContainer .blogContent .blogImg {
+  position: absolute;
+  top: -125px;
+  left: 15px;
+  max-width: 95%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: -15px 15px #ff8327;
+          box-shadow: -15px 15px #ff8327;
+}
+.blogContainer .blogContent .blogWords {
+  border-left: 5px solid #ff8327;
+  border-bottom: 5px solid #ff8327;
+  margin-top: 253px;
+}
+.blogContainer .blogContent .blogWords .menuContainer {
+  padding: 80px 0px 0px 50px;
+}
+
+.commentContainer {
+  margin-right: 95px;
+}
+.commentContainer .commentCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.commentContainer .peopleImg {
+  width: 25%;
+}
+.commentContainer .commentContent {
+  width: 75%;
+}
+.commentContainer .commentContent h4 {
+  font-size: 2rem;
+  color: #ff8327;
+  margin-top: -20px;
+  margin-bottom: -35px;
+}
+.commentContainer .commentContent p {
+  font-size: 1.8rem;
+  margin-bottom: 88px;
 }
