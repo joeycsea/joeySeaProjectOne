@@ -92,17 +92,19 @@
                </div>
             </section>
 
-            <div class="commentFormContainer">
+            <div class="commentFormContainer blogWrapper">
                <form action="#" method="post" name="commentForm" class="commentForm">
                   
-                  <label for="name">Name</label>
-                  <input type="text" id="name">
-
-                  <label for="email">Email address</label>
-                  <input type="email" id="email">
+                  <div class="nameEmail">
+                     <span><label for="name">Name</label>
+                     <input type="text" id="name"></span>
+   
+                     <span><label for="email">Email address</label>
+                     <input type="email" id="email"></span>
+                  </div>
 
                   <label for="message" ></label>
-                  <textarea name="message" id="message" cols="30" rows="10" placeholder="Comment"></textarea>
+                  <textarea name="message" id="message" cols="30" rows="10" placeholder="Comment" placeholder="Comments"></textarea>
                   
                   <button>Post Comment</button>
                </form>

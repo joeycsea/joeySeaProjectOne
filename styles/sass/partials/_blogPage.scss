@@ -65,10 +65,10 @@
          top: -125px;
          left: 15px;
          max-width: 95%;
+         width: 900px;
          height: auto;
          object-fit: cover;
          box-shadow: -15px 15px $orange;
-         
       }
       .blogWords {
          border-left: 5px solid $orange;
@@ -84,7 +84,6 @@
 
 // Comments styles
 .commentContainer {
-   margin-right: 95px;
    .commentCard {
       display: flex;
 
@@ -104,5 +103,36 @@
          font-size: 1.8rem;
          margin-bottom: 88px;
       }
+   }
+}
+
+// Comment Form styles
+.commentFormContainer {
+   .nameEmail {
+      display: flex;
+      justify-content: space-between;
+   }
+   input, textarea{
+      color: white;
+      background-color: $primary;
+      font-family: $bodyFont;
+   }
+   input {
+      border: none;
+      border-bottom: 1px solid $orange;
+      margin-bottom: 20px;
+      width: 95%;
+   }
+   textarea {
+   border: 1px solid $orange;
+   resize: none;
+   width: 630px;
+   height: 300px;
+   margin-bottom: 50px;
+   padding: 20px;
+   }
+   button {
+      width: 98%;
+      margin-bottom: 100px;
    }
 }

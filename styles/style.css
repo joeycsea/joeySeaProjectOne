@@ -626,6 +626,7 @@ nav .barOneNavLogo {
   top: -125px;
   left: 15px;
   max-width: 95%;
+  width: 900px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -641,9 +642,6 @@ nav .barOneNavLogo {
   padding: 80px 0px 0px 50px;
 }
 
-.commentContainer {
-  margin-right: 95px;
-}
 .commentContainer .commentCard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -664,4 +662,36 @@ nav .barOneNavLogo {
 .commentContainer .commentContent p {
   font-size: 1.8rem;
   margin-bottom: 88px;
+}
+
+.commentFormContainer .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.commentFormContainer input, .commentFormContainer textarea {
+  color: white;
+  background-color: #111010;
+  font-family: "Chathura";
+}
+.commentFormContainer input {
+  border: none;
+  border-bottom: 1px solid #ff8327;
+  margin-bottom: 20px;
+  width: 95%;
+}
+.commentFormContainer textarea {
+  border: 1px solid #ff8327;
+  resize: none;
+  width: 630px;
+  height: 300px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.commentFormContainer button {
+  width: 98%;
+  margin-bottom: 100px;
 }
