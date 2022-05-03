@@ -7,27 +7,23 @@
    ul {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
       li {
          width: calc((95%/2) - 50px);
-         margin-right: 50px;
          .aboutCard {
             display: flex;
             span {
                width: 25%;
-
                i {
                   color: white;
                   z-index: 5;
                }
-               
                .fa-circle {
                   color: $red;
                }
             }
             .aboutCardRight {
                width: 75%;
-
                h2 {
                   margin: 0;
                }

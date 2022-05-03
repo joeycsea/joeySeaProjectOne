@@ -454,13 +454,12 @@ nav .barOneNavLogo {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .about ul li {
   width: calc(47.5% - 50px);
-  margin-right: 50px;
 }
 .about ul li .aboutCard {
   display: -webkit-box;
