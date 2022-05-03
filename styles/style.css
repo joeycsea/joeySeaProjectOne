@@ -690,6 +690,10 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
   .about ul li {
     width: 100%;
   }
+
+  .hostAParty {
+    margin-top: 85px;
+  }
 }
 @media (max-width: 810px) {
   .planAhead,
@@ -705,11 +709,6 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
         -ms-flex-order: 10;
             order: 10;
     margin-top: 110px;
-    width: 100%;
-  }
-
-  .gridContent {
-    width: 100%;
   }
 
   .hostAParty {
@@ -724,9 +723,53 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 50px;
+    margin-left: 0;
+    text-align: center;
   }
   .events .eventContent h2 {
     margin-top: 50px;
+  }
+
+  .grid .planAhead,
+.grid .newLocations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .grid .planAhead .gridContent,
+.grid .newLocations .gridContent {
+    width: 100%;
+    text-align: center;
+  }
+  .grid .planAhead .leftImg img,
+.grid .newLocations .leftImg img {
+    position: relative;
+    left: -95px;
+    top: -50px;
+    -webkit-box-shadow: 10px 10px #ff8327;
+            box-shadow: 10px 10px #ff8327;
+  }
+  .grid .planAhead .rightImg img,
+.grid .newLocations .rightImg img {
+    position: relative;
+    right: -100px;
+    bottom: -85px;
+    -webkit-box-shadow: -10px 10px #ff8327;
+            box-shadow: -10px 10px #ff8327;
+  }
+
+  .planAhead .gridContent {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .newLocations .gridContent {
+    padding-right: 0px;
+    text-align: center;
+  }
+  .newLocations .gridContent p {
+    text-align: center;
   }
 
   .gallery {
@@ -751,6 +794,26 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
   }
   .gallery ul li {
     margin: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .barOneText h1 {
+    font-size: 8rem;
+  }
+
+  main h2 {
+    font-size: 2.2rem;
+  }
+  main p {
+    font-size: 1.3rem;
+  }
+
+  .aboutCard .fa-stack {
+    font-size: 1.25rem;
+  }
+
+  footer p {
+    font-size: 1.4rem;
   }
 }
 .blogContainer {
@@ -905,6 +968,21 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
   margin-bottom: 100px;
 }
 
+@media (max-width: 810px) {
+  .blogNavBar {
+    height: 20vh;
+  }
+
+  .blogContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogContainer .mission {
+    width: 100%;
+  }
+}
 .contactSection {
   display: -webkit-box;
   display: -ms-flexbox;

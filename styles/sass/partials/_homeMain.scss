@@ -171,6 +171,9 @@
          }
       }
    }
+   .hostAParty {
+      margin-top: 85px;
+   }
 }
 
 
@@ -182,11 +185,6 @@
    .newLocations .gridContent {
       order: 10;
       margin-top: 110px;
-      width: 100%;
-   }
-
-   .gridContent {
-      width: 100%;
    }
 
    .hostAParty {
@@ -196,11 +194,64 @@
    .events {
       flex-direction: column;
       align-items: center;
+      margin-bottom: 50px;
+      margin-left: 0;
+      text-align: center;
       .eventContent 
-      h2 {
+         h2 {
          margin-top: 50px;
       }
    }
+
+
+   .grid {
+      .planAhead,
+      .newLocations {
+         display: flex;
+   
+         .gridContent {
+            width: 100%;
+            text-align: center;
+         }
+   
+         .leftImg {
+            img {
+               position: relative;
+               left: -95px;
+               top: -50px;
+               box-shadow: 10px 10px $orange;
+            }
+         }
+   
+         .rightImg {
+            img {
+               position: relative;
+               right: -100px;
+               bottom: -85px;
+               box-shadow: -10px 10px $orange;
+            }
+         }
+      }
+   }
+   
+   .planAhead {
+      .gridContent {
+         margin-left: 0px;
+         text-align: center;
+      }
+   }
+   
+   .newLocations {
+      .gridContent {
+         padding-right: 0px;
+         text-align: center;
+   
+         p {
+            text-align: center;
+         }
+      }
+   }
+
 
    .gallery {
       flex-wrap: wrap;
@@ -221,3 +272,29 @@
       }
    }
 }
+
+@media (max-width: 450px) {
+   .barOneText h1 {
+         font-size: 8rem;
+      }
+   main {
+      h2 {
+         font-size: 2.2rem;
+      }
+
+      p {
+         font-size: 1.3rem;
+      }
+   }
+
+   .aboutCard {
+      .fa-stack {
+         font-size: 1.25rem;
+      }
+   }
+
+   footer p {
+      font-size: 1.4rem;
+   }
+}
+
