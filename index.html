@@ -15,7 +15,7 @@
 
 
    <!-- ===== Font Awesome ===== -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <script src="https://kit.fontawesome.com/1686cdb2e3.js" crossorigin="anonymous"></script>
 
    <!-- ===== Linking Styles ===== -->
    <link rel="stylesheet" href="./styles/style.css">
@@ -27,7 +27,18 @@
 
    <!-- ===== Nav ===== -->
    <nav class="navBar">
-      <ul>
+      <ul class="mainMenu">
+         <li><a href="./index.html">Home</a></li>
+         <li><a href="#about">About</a></li>
+         <li class="barOneNavLogo"><a href="./index.html">Bar-One</a></li>
+         <li><a href="./blog.html">Blog</a></li>
+         <li><a href="./contact.html">Contact</a></li>
+      </ul>
+
+      <label for="toggle"><i class="fa-solid fa-bars"></i></label>
+      <input type="checkbox" id="toggle" name="toggle" />
+
+      <ul class="slidingMenu">
          <li><a href="./index.html">Home</a></li>
          <li><a href="#about">About</a></li>
          <li class="barOneNavLogo"><a href="./index.html">Bar-One</a></li>

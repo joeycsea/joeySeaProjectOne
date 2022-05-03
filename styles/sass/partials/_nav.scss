@@ -12,4 +12,75 @@ nav {
       font-weight: 300;
       text-transform: none;
    }
+   .slidingMenu,
+   .blogSlidingMenu,
+   .contactSlidingMenu {
+      display: none;
+   }
+   input[type="checkbox"] {
+      display: none;
+   }
+}
+
+label .fa-bars {
+   display: none;
+}
+
+// === Media Query for Hamburger Sliding Menu 
+@media (max-width: 770px) {
+   .navBar .mainMenu,
+   .blogNavBar .blogMainMenu,
+   .contactNavBar .contactMainMenu {
+      display: none;
+   }
+
+   .navBar label .fa-bars,
+   .blogNavBar label .fa-bars,
+   .contactNavBar label .fa-bars {
+      display: block;
+   }
+
+   .navBar ul.slidingMenu,
+   .blogNavBar ul.blogSlidingMenu,
+   .contactNavBar ul.contactSlidingMenu {
+      background: $primary;
+      position: fixed;
+      z-index: 10;
+      width: 30%;
+      right: -30%;
+      top: 55px;
+      transition: all 0.5s;
+      display: block;
+   }
+   
+   ul.slidingMenu a,
+   ul.blogSlidingMenu a,
+   ul.contactSlidingMenu a {
+      border-bottom: 2px solid $orange;
+      display: inline-block;
+      font-size: 1.7rem;
+      width: 100%;
+      padding: 20px;
+      transition: all 0.3s;
+   }
+   
+   
+   input[type="checkbox"]:checked+ul.slidingMenu,
+   input[type="checkbox"]:checked+ul.blogSlidingMenu,
+   input[type="checkbox"]:checked+ul.contactSlidingMenu {
+      right: 0;
+      display: block;
+   }
+   
+   
+   .navBar label[for="toggle"],
+   .blogNavBar label[for="toggle"],
+   .contactNavBar label[for="toggle"] {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      color: white;
+      z-index: 10;
+      font-size: 40px;
+   }
 }
