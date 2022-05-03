@@ -31,6 +31,9 @@
                h2 {
                   margin: 0;
                }
+               p {
+                  margin-top: 10px;
+               }
             }
          }
       }
@@ -43,6 +46,13 @@
 .grid {
    background-color: $darkRed;
    padding-bottom: 50px;
+   p {
+      margin-top: 10px;
+   }
+   h2 {
+      margin: 0;
+      margin-top: 50px;
+   }
    .planAhead, .newLocations {
       display: flex;
       .gridContent {
@@ -116,6 +126,7 @@
       margin-left: 80px;
       h2 {
          margin: 0;
+         color: $orange;
       }
    }
 }

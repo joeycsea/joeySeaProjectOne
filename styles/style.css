@@ -382,6 +382,7 @@ nav .barOneNavLogo {
   font-family: "Tulpen One";
   font-size: 2.75rem;
   font-weight: 300;
+  text-transform: none;
 }
 
 .mainHeader {
@@ -429,6 +430,7 @@ nav .barOneNavLogo {
 }
 .blogNavBar h3 {
   margin-top: 25vh;
+  text-transform: none;
 }
 
 .contactNavBar {
@@ -439,6 +441,7 @@ nav .barOneNavLogo {
 }
 .contactNavBar h3 {
   margin-top: 25vh;
+  text-transform: none;
 }
 
 .about {
@@ -480,10 +483,20 @@ nav .barOneNavLogo {
 .about ul li .aboutCard .aboutCardRight h2 {
   margin: 0;
 }
+.about ul li .aboutCard .aboutCardRight p {
+  margin-top: 10px;
+}
 
 .grid {
   background-color: #220303;
   padding-bottom: 50px;
+}
+.grid p {
+  margin-top: 10px;
+}
+.grid h2 {
+  margin: 0;
+  margin-top: 50px;
 }
 .grid .planAhead, .grid .newLocations {
   display: -webkit-box;
@@ -552,6 +565,7 @@ nav .barOneNavLogo {
 }
 .events .eventContent h2 {
   margin: 0;
+  color: #ff8327;
 }
 
 .gallery {
@@ -651,7 +665,7 @@ nav .barOneNavLogo {
   margin-top: 253px;
 }
 .blogContainer .blogContent .blogWords .menuContainer {
-  padding: 80px 0px 0px 50px;
+  padding: 80px 10px 50px 80px;
 }
 .blogContainer .blogContent .blogWords .menuContainer h3 {
   margin: 75px 0 0 0;
