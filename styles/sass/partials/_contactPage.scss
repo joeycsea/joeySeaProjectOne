@@ -45,14 +45,16 @@
       color: white;
       background-color: $darkRed;
       font-family: $bodyFont;
-      height: 20px;
       width: 100%;
    }
-
+   input[type="text"],
+   input[type="email"] {
+      height: 30px;
+   }
    input {
       border: none;
       border-bottom: 1px solid white;
-      margin-bottom: 20px;
+      margin-bottom: 45px;
       width: 95%;
    }
 
@@ -67,15 +69,11 @@
 
    button {
       width: 100%;
-      // margin-bottom: 75px;
    }
    }
 
 }
 
-input[type="text"] {
-   height: 20px;
-}
 .contactFooter {
    margin-top: 300px;
 }

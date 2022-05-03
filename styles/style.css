@@ -502,8 +502,8 @@ nav .barOneNavLogo {
 }
 .grid .planAhead .rightImg img, .grid .newLocations .rightImg img {
   position: relative;
-  right: -95px;
-  bottom: -140px;
+  right: -100px;
+  bottom: -85px;
   -webkit-box-shadow: -10px 10px #ff8327;
           box-shadow: -10px 10px #ff8327;
 }
@@ -522,7 +522,7 @@ nav .barOneNavLogo {
 
 .hostAParty {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 140px;
   margin-bottom: 100px;
 }
 .hostAParty h2 {
@@ -549,6 +549,9 @@ nav .barOneNavLogo {
 .events .eventContent {
   width: 75%;
   margin-left: 80px;
+}
+.events .eventContent h2 {
+  margin: 0;
 }
 
 .gallery {
@@ -592,7 +595,7 @@ nav .barOneNavLogo {
 .blogContainer .mission p {
   margin-bottom: 0;
   margin-top: 0;
-  padding: 30px;
+  padding: 0 30px 0 30px;
 }
 .blogContainer .mission .missionImg {
   width: auto;
@@ -635,7 +638,6 @@ nav .barOneNavLogo {
   position: absolute;
   top: -125px;
   left: 15px;
-  max-width: 95%;
   width: 900px;
   height: auto;
   -o-object-fit: cover;
@@ -651,14 +653,24 @@ nav .barOneNavLogo {
 .blogContainer .blogContent .blogWords .menuContainer {
   padding: 80px 0px 0px 50px;
 }
+.blogContainer .blogContent .blogWords .menuContainer h3 {
+  margin: 75px 0 0 0;
+}
+.blogContainer .blogContent .blogWords .menuContainer .menuDate {
+  color: #ff8327;
+  margin-top: 5px;
+}
 
 .commentContainer .commentCard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
-.commentContainer .peopleImg {
-  width: 25%;
+.commentContainer h3 {
+  margin: 50px 0 35px 25px;
 }
 .commentContainer .commentContent {
   width: 75%;
@@ -682,16 +694,21 @@ nav .barOneNavLogo {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.commentFormContainer input, .commentFormContainer textarea {
+.commentFormContainer input,
+.commentFormContainer textarea {
   color: white;
   background-color: #111010;
   font-family: "Chathura";
-  height: 20px;
+  width: 100%;
+}
+.commentFormContainer input[type=text],
+.commentFormContainer input[type=email] {
+  height: 30px;
 }
 .commentFormContainer input {
   border: none;
   border-bottom: 1px solid #ff8327;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
   width: 95%;
 }
 .commentFormContainer textarea {
@@ -762,13 +779,16 @@ nav .barOneNavLogo {
   color: white;
   background-color: #220303;
   font-family: "Chathura";
-  height: 20px;
   width: 100%;
+}
+.messageFormContainer .contactCard input[type=text],
+.messageFormContainer .contactCard input[type=email] {
+  height: 30px;
 }
 .messageFormContainer .contactCard input {
   border: none;
   border-bottom: 1px solid white;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
   width: 95%;
 }
 .messageFormContainer .contactCard textarea {
@@ -781,10 +801,6 @@ nav .barOneNavLogo {
 }
 .messageFormContainer .contactCard button {
   width: 100%;
-}
-
-input[type=text] {
-  height: 20px;
 }
 
 .contactFooter {

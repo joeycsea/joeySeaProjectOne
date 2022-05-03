@@ -20,7 +20,7 @@
       p {
          margin-bottom: 0;
          margin-top: 0;
-         padding: 30px;
+         padding: 0 30px 0 30px;
       }
       .missionImg {
          width: auto;
@@ -45,7 +45,7 @@
          line-height: 30px;
          font-size: 1.9rem; 
          padding: 10px;
-   // https: //stackoverflow.com/questions/5306640/how-to-set-bullet-colors-in-ul-li-html-lists-via-css-without-using-any-images-or 
+         // https: //stackoverflow.com/questions/5306640/how-to-set-bullet-colors-in-ul-li-html-lists-via-css-without-using-any-images-or
          li::before {
             content: "";
             width: 0.5rem;
@@ -64,7 +64,6 @@
          position: absolute;
          top: -125px;
          left: 15px;
-         max-width: 95%;
          width: 900px;
          height: auto;
          object-fit: cover;
@@ -73,10 +72,16 @@
       .blogWords {
          border-left: 5px solid $orange;
          border-bottom: 5px solid $orange;
-         // margin-top: 400px;
          margin-top: 253px;
          .menuContainer {
             padding: 80px 0px 0px 50px;
+            h3 {
+               margin: 75px 0 0 0;
+            }
+            .menuDate {
+               color: $orange;
+               margin-top: 5px;
+            }
          }
       }
    }
@@ -86,10 +91,10 @@
 .commentContainer {
    .commentCard {
       display: flex;
-
+      justify-content: space-evenly;
    }
-   .peopleImg {
-      width: 25%;
+   h3 {
+      margin: 50px 0 35px 25px;
    }
    .commentContent {
       width: 75%;
@@ -112,16 +117,21 @@
       display: flex;
       justify-content: space-between;
    }
-   input, textarea{
+   input, 
+   textarea {
       color: white;
       background-color: $primary;
       font-family: $bodyFont;
-      height: 20px;
+      width: 100%;
+   }
+   input[type="text"],
+   input[type="email"] {
+      height: 30px;
    }
    input {
       border: none;
       border-bottom: 1px solid $orange;
-      margin-bottom: 20px;
+      margin-bottom: 45px;
       width: 95%;
    }
    textarea {
@@ -137,3 +147,4 @@
       margin-bottom: 100px;
    }
 }
+

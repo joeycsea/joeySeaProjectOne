@@ -59,8 +59,8 @@
       .rightImg {
          img {
             position: relative;
-            right: -95px;
-            bottom: -140px;
+            right: -100px;
+            bottom: -85px;
             box-shadow: -10px 10px $orange;
          }
       }
@@ -88,7 +88,7 @@
 
 .hostAParty {
    text-align: center;
-   margin-top: 100px;
+   margin-top: 140px;
    margin-bottom: 100px;
    h2 {
       color: $orange;
@@ -114,6 +114,9 @@
    .eventContent {
       width: 75%;
       margin-left: 80px;
+      h2 {
+         margin: 0;
+      }
    }
 }
 
