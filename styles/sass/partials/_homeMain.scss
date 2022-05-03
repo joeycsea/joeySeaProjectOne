@@ -140,3 +140,40 @@
       flex-basis: 32%;
    }
 }
+
+// ===== Media Queries ====
+@media (max-width: 960px) {
+   main {
+      h2 {
+         font-size: 3rem;
+      }
+      p {
+         font-size: 1.5rem;
+      }
+   }
+   .barOneText {
+      height: 60%;
+      h1 {
+      font-size: 10rem;
+      }
+      p {
+         line-height: 70px;
+      }
+   }
+   .about {
+      padding-top: 30px;
+      ul {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         li {
+            width: 100%;
+         }
+      }
+   }
+}
+
+
+@media (max-width: 770px) {
+   
+}

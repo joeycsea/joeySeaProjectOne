@@ -585,6 +585,43 @@ nav .barOneNavLogo {
       flex-basis: 32%;
 }
 
+@media (max-width: 960px) {
+  main h2 {
+    font-size: 3rem;
+  }
+  main p {
+    font-size: 1.5rem;
+  }
+
+  .barOneText {
+    height: 60%;
+  }
+  .barOneText h1 {
+    font-size: 10rem;
+  }
+  .barOneText p {
+    line-height: 70px;
+  }
+
+  .about {
+    padding-top: 30px;
+  }
+  .about ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about ul li {
+    width: 100%;
+  }
+}
 .blogContainer {
   display: -webkit-box;
   display: -ms-flexbox;
