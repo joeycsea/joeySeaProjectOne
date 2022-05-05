@@ -152,16 +152,64 @@
 
 @media (max-width: 810px) {
    .blogNavBar {
-      height: 20vh;
+      height: 40vh;
    }
-
    .blogContainer {
       flex-direction: column;
       .mission {
          width: 100%;
-         h2 {
-            // margin-top: 200px;
+         .missionImg {
+            width: 375px;
          }
+         ul {
+            font-size: 1.3rem;
+         }
+      }  
+   }
+
+   .blogContent .blogWords .blogImg {
+      top: 0;
+      left: 170px;
+      width: 550px;
+   }
+
+   .blogContainer {
+      .blogContent {
+         width: 100%;
       }
+   }
+
+   .commentContainer .commentContent p {
+      font-size: 1.3rem;
+   }
+}
+
+
+@media (max-width: 550px) {
+   .blogContent .blogWords .blogImg {
+      top: 0;
+      left: 0;
+   }
+   
+   .blogContainer .blogContent .blogWords .menuContainer {
+      padding: 30px 10px 10px 20px;
+      h3 {
+         margin-top: 75px;
+      }
+   }
+
+   .commentFormContainer .nameEmail {
+      display: block;
+   }
+}
+
+@media (max-width: 400px) {
+   .blogContainer .blogContent .blogWords .menuContainer {   
+      h3 {
+         margin-top: 0
+      }
+   }
+   .blogContainer .mission .missionContainer {
+      padding-top: 290px;
    }
 }

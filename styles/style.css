@@ -498,7 +498,7 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
   width: 100%;
 }
 .blogNavBar h3 {
-  margin-top: 25vh;
+  padding-top: 25vh;
   text-transform: none;
 }
 
@@ -509,7 +509,7 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
   width: 100%;
 }
 .contactNavBar h3 {
-  margin-top: 25vh;
+  padding-top: 25vh;
   text-transform: none;
 }
 
@@ -970,7 +970,7 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
 
 @media (max-width: 810px) {
   .blogNavBar {
-    height: 20vh;
+    height: 40vh;
   }
 
   .blogContainer {
@@ -981,6 +981,52 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
   }
   .blogContainer .mission {
     width: 100%;
+  }
+  .blogContainer .mission .missionImg {
+    width: 375px;
+  }
+  .blogContainer .mission ul {
+    font-size: 1.3rem;
+  }
+
+  .blogContent .blogWords .blogImg {
+    top: 0;
+    left: 170px;
+    width: 550px;
+  }
+
+  .blogContainer .blogContent {
+    width: 100%;
+  }
+
+  .commentContainer .commentContent p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 550px) {
+  .blogContent .blogWords .blogImg {
+    top: 0;
+    left: 0;
+  }
+
+  .blogContainer .blogContent .blogWords .menuContainer {
+    padding: 30px 10px 10px 20px;
+  }
+  .blogContainer .blogContent .blogWords .menuContainer h3 {
+    margin-top: 75px;
+  }
+
+  .commentFormContainer .nameEmail {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .blogContainer .blogContent .blogWords .menuContainer h3 {
+    margin-top: 0;
+  }
+
+  .blogContainer .mission .missionContainer {
+    padding-top: 290px;
   }
 }
 .contactSection {
@@ -1064,4 +1110,10 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
 
 .contactFooter {
   margin-top: 300px;
+}
+
+@media (max-width: 810px) {
+  .contactNavBar {
+    height: 40vh;
+  }
 }

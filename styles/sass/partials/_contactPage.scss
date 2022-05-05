@@ -79,4 +79,10 @@
 }
 
 
-// === Media Query for Hamburger Sliding Menu 
+// === Media Query
+@media (max-width: 810px) {
+   .contactNavBar {
+      height: 40vh;
+   }
+
+}
