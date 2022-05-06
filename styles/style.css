@@ -422,7 +422,7 @@ label .fa-bars {
   .navBar ul.slidingMenu,
 .blogNavBar ul.blogSlidingMenu,
 .contactNavBar ul.contactSlidingMenu {
-    background: #111010;
+    background-color: #111010;
     position: fixed;
     z-index: 10;
     width: 30%;
@@ -438,9 +438,9 @@ ul.blogSlidingMenu a,
 ul.contactSlidingMenu a {
     border-bottom: 2px solid #ff8327;
     display: inline-block;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
@@ -466,7 +466,7 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
 .mainHeader {
   background: url(../assets/home-image-1.jpg) no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -52,7 +52,7 @@ label .fa-bars {
    .navBar ul.slidingMenu,
    .blogNavBar ul.blogSlidingMenu,
    .contactNavBar ul.contactSlidingMenu {
-      background: $primary;
+      background-color: $primary;
       position: fixed;
       z-index: 10;
       width: 30%;
@@ -67,9 +67,9 @@ label .fa-bars {
    ul.contactSlidingMenu a {
       border-bottom: 2px solid $orange;
       display: inline-block;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       width: 100%;
-      padding: 20px;
+      padding: 15px;
       transition: all 0.3s;
    }
    
