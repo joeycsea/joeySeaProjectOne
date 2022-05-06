@@ -80,9 +80,23 @@
 
 
 // === Media Query
+
+@media (max-width: 900px) {
+.messageFormContainer .contactCard {
+      position: initial;
+      width: 100%;
+   }
+}
+
 @media (max-width: 810px) {
    .contactNavBar {
       height: 40vh;
    }
+   
+}
 
+@media (max-width: 600px) {
+   .messageFormContainer .contactCard .nameEmail {
+      flex-direction: column;
+   }
 }

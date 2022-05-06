@@ -22,6 +22,15 @@ nav {
    }
 }
 
+.navBar, .blogMainMenu, .contactMainMenu {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   text-align: center;
+   background-color: $primary;
+   z-index: 20;
+}
+
 label .fa-bars {
    display: none;
 }

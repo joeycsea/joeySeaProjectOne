@@ -393,6 +393,15 @@ nav input[type=checkbox] {
   display: none;
 }
 
+.navBar, .blogMainMenu, .contactMainMenu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #111010;
+  z-index: 20;
+}
+
 label .fa-bars {
   display: none;
 }
@@ -986,7 +995,7 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
     width: 375px;
   }
   .blogContainer .mission ul {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .blogContent .blogWords .blogImg {
@@ -1000,7 +1009,7 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
   }
 
   .commentContainer .commentContent p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 550px) {
@@ -1018,6 +1027,10 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
 
   .commentFormContainer .nameEmail {
     display: block;
+  }
+
+  .commentCard .peopleImg {
+    margin-right: 15px;
   }
 }
 @media (max-width: 400px) {
@@ -1112,8 +1125,22 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
   margin-top: 300px;
 }
 
+@media (max-width: 900px) {
+  .messageFormContainer .contactCard {
+    position: initial;
+    width: 100%;
+  }
+}
 @media (max-width: 810px) {
   .contactNavBar {
     height: 40vh;
+  }
+}
+@media (max-width: 600px) {
+  .messageFormContainer .contactCard .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
