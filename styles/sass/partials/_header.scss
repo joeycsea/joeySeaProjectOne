@@ -4,7 +4,7 @@
 .mainHeader {
    background: url(../assets/home-image-1.jpg) no-repeat;
    background-size: cover;
-   height: 70vh;
+   height: 100vh;
    width: 100%;
    display: flex;
    flex-direction: column;
@@ -19,12 +19,16 @@
       }
    }
    .headerimg {
-      position: absolute;
-      right: 0;
-      top: 200px;
-      z-index: 1;
-      width: 45%;
+      position: relative;
+      width: 50%;
       object-fit: cover;
+      img {
+         position: absolute;
+         right: -360px;
+         top: -400px;
+         z-index: 1;
+         min-height: 200px;
+      }
    }
 }
 

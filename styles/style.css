@@ -466,7 +466,7 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
 .mainHeader {
   background: url(../assets/home-image-1.jpg) no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 100vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -491,13 +491,17 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
   margin-bottom: 35px;
 }
 .mainHeader .headerimg {
-  position: absolute;
-  right: 0;
-  top: 200px;
-  z-index: 1;
-  width: 45%;
+  position: relative;
+  width: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.mainHeader .headerimg img {
+  position: absolute;
+  right: -360px;
+  top: -400px;
+  z-index: 1;
+  min-height: 200px;
 }
 
 .blogNavBar {
@@ -681,6 +685,17 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
     line-height: 70px;
   }
 
+  .mainHeader .headerimg {
+    position: absolute;
+    right: 360px;
+    top: 875px;
+    z-index: 1;
+    width: 500px;
+    max-width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
   .about {
     padding-top: 30px;
   }
@@ -787,12 +802,14 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
   }
 }
 @media (max-width: 550px) {
-  .gallery {
+  .mainHeader .headerimg img {
+    display: none;
+  }
+  .mainHeader .headerimg img .gallery {
     padding-top: 10px;
     padding-bottom: 30px;
   }
-
-  .gallery ul {
+  .mainHeader .headerimg img .gallery ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -801,11 +818,11 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
         -ms-flex-align: center;
             align-items: center;
   }
-  .gallery ul li {
+  .mainHeader .headerimg img .gallery ul li {
     margin: 10px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 550px) and (max-width: 450px) {
   .barOneText h1 {
     font-size: 8rem;
   }
@@ -821,7 +838,30 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
     font-size: 1.25rem;
   }
 
-  footer p {
+  .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px;
+  }
+
+  .grid .planAhead .leftImg img {
+    position: relative;
+    left: -5px;
+    top: -50px;
+    -webkit-box-shadow: 10px 10px #ff8327;
+            box-shadow: 10px 10px #ff8327;
+  }
+
+  .grid .newLocations .rightImg img {
+    position: relative;
+    right: -5px;
+    bottom: -85px;
+    -webkit-box-shadow: -10px 10px #ff8327;
+            box-shadow: -10px 10px #ff8327;
+  }
+  .grid .newLocations .rightImg footer p {
     font-size: 1.4rem;
   }
 }
@@ -1142,5 +1182,9 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .messageFormContainer .contactCard {
+    padding: 15px;
   }
 }
