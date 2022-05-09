@@ -507,7 +507,7 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
 .blogNavBar {
   background-image: url(../assets/blog-header-1.jpg);
   background-size: cover;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
 }
 .blogNavBar h3 {
@@ -518,7 +518,7 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
 .contactNavBar {
   background-image: url(../assets/contact-header-1.jpg);
   background-size: cover;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
 }
 .contactNavBar h3 {

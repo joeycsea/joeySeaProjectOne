@@ -4,7 +4,6 @@
 .blogContainer {
    display: flex;
    justify-content: space-between;
-   // margin-top: 100px;
 
    .mission {
       width: 35%;
@@ -148,7 +147,7 @@
    }
 }
 
-//  ===== Media Queries 
+//  ===== Media Queries =====
 
 @media (max-width: 810px) {
    .blogNavBar {
