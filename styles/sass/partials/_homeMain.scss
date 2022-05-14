@@ -270,6 +270,53 @@
    }
 }
 
+// ==== Modal Styles =====
+// https: //www.youtube.com/watch?v=MBaw_6cPmAw
+.modal {
+   position: fixed;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   border-radius: 0.5rem;
+   border: 2px solid $orange;
+   z-index: 100;
+   background-color: $darkRed;
+   width: 500px;
+   max-width: 80%;
+   transition:  0.5s ease-in-out;
+   text-align: center;
+   display: none;
+
+}
+
+.modal-active {
+   // transform: translate(-50%, -50%);
+   display: block;
+}
+
+.modalHeader {
+   padding: 10px 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+.overlay {
+   display:none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0,0,0,0.5);
+   transition: 0.5s ease-in-out;
+   z-index: 500;
+}
+
+.overlay-active {
+   display: block;
+}
 
 @media (max-width: 550px) {
 

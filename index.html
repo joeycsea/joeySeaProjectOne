@@ -35,8 +35,9 @@
          <li><a href="./contact.html">Contact</a></li>
       </ul>
 
-      <label for="toggle"><i class="fa-solid fa-bars"></i></label>
-      <input type="checkbox" id="toggle" name="toggle" />
+      <button class="slidingMenuButton">
+         <i class="fa-solid fa-bars"></i>
+      </button>
 
       <ul class="slidingMenu">
          <li><a href="./index.html">Home</a></li>
@@ -199,6 +200,21 @@
    <footer>
       <p>Copyright 2019 Juno College</p>
    </footer>
+
+   <!-- ===== MODAL ====== -->
+   <div class="overlay" id="overlay">
+      <div class="modal" id="modal">
+         <div class="modalHeader">
+            <button class="closeButton">&times;</button>
+            <h3>Celebrate and Host a Party!</h3>
+         </div>
+         <div class="modalBody">
+            <p>Please call for availability to book your upcoming party. (555)555-5555 </p>
+         </div>
+      </div>
+   </div>
+
+
 
    <script src="./script.js"></script>
 </body>

@@ -384,12 +384,10 @@ nav .barOneNavLogo {
   font-weight: 300;
   text-transform: none;
 }
-nav .slidingMenu,
-nav .blogSlidingMenu,
-nav .contactSlidingMenu {
-  display: none;
-}
-nav input[type=checkbox] {
+
+.slidingMenu,
+.blogSlidingMenu,
+.contactSlidingMenu {
   display: none;
 }
 
@@ -397,12 +395,11 @@ nav input[type=checkbox] {
   position: fixed;
   top: 0;
   width: 100%;
-  text-align: center;
   background-color: #111010;
   z-index: 20;
 }
 
-label .fa-bars {
+.slidingMenuButton {
   display: none;
 }
 
@@ -413,15 +410,19 @@ label .fa-bars {
     display: none;
   }
 
-  .navBar label .fa-bars,
-.blogNavBar label .fa-bars,
-.contactNavBar label .fa-bars {
+  .navBar .slidingMenuButton,
+.blogNavBar .slidingMenuButton,
+.contactNavBar .slidingMenuButton {
     display: block;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    background-color: #111010;
   }
 
-  .navBar ul.slidingMenu,
-.blogNavBar ul.blogSlidingMenu,
-.contactNavBar ul.contactSlidingMenu {
+  .slidingMenu,
+.blogSlidingMenu,
+.contactSlidingMenu {
     background-color: #111010;
     position: fixed;
     z-index: 10;
@@ -445,22 +446,9 @@ ul.contactSlidingMenu a {
     transition: all 0.3s;
   }
 
-  input[type=checkbox]:checked + ul.slidingMenu,
-input[type=checkbox]:checked + ul.blogSlidingMenu,
-input[type=checkbox]:checked + ul.contactSlidingMenu {
-    right: 0;
+  .reveal-active {
+    right: 0%;
     display: block;
-  }
-
-  .navBar label[for=toggle],
-.blogNavBar label[for=toggle],
-.contactNavBar label[for=toggle] {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    color: white;
-    z-index: 10;
-    font-size: 40px;
   }
 }
 .mainHeader {
@@ -801,6 +789,62 @@ input[type=checkbox]:checked + ul.contactSlidingMenu {
         flex-wrap: wrap;
   }
 }
+.modal {
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  border-radius: 0.5rem;
+  border: 2px solid #ff8327;
+  z-index: 100;
+  background-color: #220303;
+  width: 500px;
+  max-width: 80%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+  display: none;
+}
+
+.modal-active {
+  display: block;
+}
+
+.modalHeader {
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  z-index: 500;
+}
+
+.overlay-active {
+  display: block;
+}
+
 @media (max-width: 550px) {
   .mainHeader .headerimg img {
     display: none;
