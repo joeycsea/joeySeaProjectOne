@@ -13,9 +13,7 @@ nav {
    }
 }
 
-.slidingMenu,
-.blogSlidingMenu,
-.contactSlidingMenu {
+.slidingMenu {
    display: none;
 }
 
@@ -50,9 +48,7 @@ nav {
       background-color: $primary;
    }
 
-   .slidingMenu, 
-   .blogSlidingMenu,
-   .contactSlidingMenu {
+   .slidingMenu {
       background-color: $primary;
       position: fixed;
       z-index: 10;
@@ -63,9 +59,7 @@ nav {
       display: block;
    }
    
-   ul.slidingMenu a,
-   ul.blogSlidingMenu a,
-   ul.contactSlidingMenu a {
+   ul.slidingMenu a {
       border-bottom: 2px solid $orange;
       display: inline-block;
       font-size: 1.5rem;

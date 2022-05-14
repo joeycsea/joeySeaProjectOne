@@ -385,9 +385,7 @@ nav .barOneNavLogo {
   text-transform: none;
 }
 
-.slidingMenu,
-.blogSlidingMenu,
-.contactSlidingMenu {
+.slidingMenu {
   display: none;
 }
 
@@ -420,9 +418,7 @@ nav .barOneNavLogo {
     background-color: #111010;
   }
 
-  .slidingMenu,
-.blogSlidingMenu,
-.contactSlidingMenu {
+  .slidingMenu {
     background-color: #111010;
     position: fixed;
     z-index: 10;
@@ -434,9 +430,7 @@ nav .barOneNavLogo {
     display: block;
   }
 
-  ul.slidingMenu a,
-ul.blogSlidingMenu a,
-ul.contactSlidingMenu a {
+  ul.slidingMenu a {
     border-bottom: 2px solid #ff8327;
     display: inline-block;
     font-size: 1.5rem;
