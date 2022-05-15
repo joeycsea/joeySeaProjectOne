@@ -91,26 +91,31 @@
             <!--  ===== Comment Section ===== -->
             <section class="commentContainer">
                <h3>Comments:</h3>
-               <div class="commentCard">
-                  <div class="peopleImg">
-                     <img src="./assets/comment-image-1.jpg" alt="a professional shot of a a person named Sulaire">
+               <div class="postedComments">
+                  <div class="commentCard">
+                     <div class="peopleImg">
+                        <img src="./assets/comment-image-1.jpg" alt="a professional shot of a a person named Sulaire">
+                     </div>
+                     <div class="commentContent">
+                        <h4 class="date">Tuesday October 9th, 2019 by Sulaire</h4>
+                        <p>Lorem ipsum dolor sit eveniet inventore quasi possimus placeat laudantium, fugiat natus necessitatibus tempore
+                           quas temporibus aspernatur hic, est repudiandae repellendus? Veritatis, impedit. Cupiditate rerum quae
+                           voluptatum dolore?</p>
+                     </div>
                   </div>
-                  <div class="commentContent">
-                     <h4 class="date">Tuesday October 9th, 2019 by Sulaire</h4>
-                     <p>Lorem ipsum dolor sit eveniet inventore quasi possimus placeat laudantium, fugiat natus necessitatibus tempore quas temporibus aspernatur hic, est repudiandae repellendus? Veritatis, impedit. Cupiditate rerum quae voluptatum dolore?</p>
+                  
+                  <div class="commentCard">
+                     <div class="peopleImg">
+                        <img src="./assets/comment-image-2.jpg" alt="a professional shot of a a person named Renzo">
+                     </div>
+                     <div class="commentContent">
+                        <h4 class="date">Wednesday October 10th, 2019 by Renzo</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, minus? Commodi eveniet inventore quasi
+                           possimus placeat laudantium, fugiat impedit. Cupiditate rerum quae voluptatum dolore?</p>
+                     </div>
                   </div>
                </div>
 
-               <div class="commentCard">
-                  <div class="peopleImg">
-                     <img src="./assets/comment-image-2.jpg" alt="a professional shot of a a person named Renzo">
-                  </div>
-                  <div class="commentContent">
-                     <h4 class="date">Wednesday October 10th, 2019 by Renzo</h4>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, minus? Commodi eveniet inventore quasi possimus placeat laudantium, fugiat impedit. Cupiditate rerum quae voluptatum dolore?</p>
-                  </div>
-               </div>
-            </section>
 
             <!-- ===== Form ===== -->
             <div class="commentFormContainer blogWrapper">
@@ -127,7 +132,7 @@
                   <label for="message" ></label>
                   <textarea name="message" id="message" cols="30" rows="10" placeholder="Comment" placeholder="Comments"></textarea>
                   
-                  <button>Post Comment</button>
+                  <button type="submit">Post Comment</button>
                </form>
          </section>
       </div>
@@ -139,6 +144,7 @@
    </footer>
 
    <script src="./scripts/menuScript.js"></script>
+   <script src="./scripts/commentScript.js"></script>
 </body>
 
 </html>
