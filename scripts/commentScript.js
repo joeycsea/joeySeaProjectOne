@@ -1,4 +1,5 @@
 // === Adding a comment in Blog Page ===
+// had help from Adam Marostica
 
 const daysOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
@@ -13,13 +14,13 @@ formElement.addEventListener('submit', function(e){
    e.preventDefault();
    
    // grab the user's input and format it into HTML elements (name, date, time, comment)
-   const nameInput = document.querySelector('input[type=text]');
-   const name = nameInput.value;
+   const userNameInput = document.querySelector('input[type=text]');
+   const name = userNameInput.value;
    
-   const emailInput = document.querySelector('input[type=email]');
+   const userEmailInput = document.querySelector('input[type=email]');
    
-   const commentInput = document.querySelector('textarea');
-   const comment = commentInput.value;
+   const userCommentInput = document.querySelector('textarea');
+   const comment = userCommentInput.value;
    
    const date = new Date();
 
@@ -56,9 +57,9 @@ formElement.addEventListener('submit', function(e){
    newCommentSection.append(commentContainerDiv);
 
    // clear the input fields once submitted 
-   nameInput.value = '';
-   emailInput.value = '';
-   commentInput.value = '';
+   userNameInput.value = '';
+   userEmailInput.value = '';
+   userCommentInput.value = '';
 
 
 });

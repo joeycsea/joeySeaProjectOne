@@ -278,7 +278,7 @@
    transform: translate(-50%, -50%);
    top: 50%;
    border-radius: 0.5rem;
-   border: 2px solid $orange;
+   border: 5px solid $orange;
    z-index: 100;
    background-color: $darkRed;
    width: 500px;
@@ -286,12 +286,10 @@
    transition:  0.5s ease-in-out;
    text-align: center;
    display: none;
-
 }
 
-.modal-active {
-   // transform: translate(-50%, -50%);
-   display: block;
+.modalBody p {
+   line-height: 50px;
 }
 
 .modalHeader {
@@ -300,8 +298,14 @@
    flex-direction: column;
    justify-content: space-between;
    align-items: flex-end;
+   h3 {
+      margin-bottom: 0;
+   }
 }
 
+.modal-active {
+   display: block;
+}
 .overlay {
    display:none;
    position: fixed;
